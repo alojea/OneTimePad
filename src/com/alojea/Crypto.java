@@ -58,7 +58,12 @@ public class Crypto {
     /**
      * substractKeystreamWithciphertext
      *
+     * Substract keystream and Ciphertext
+     * if first number is less than second
+     * add module 26 to the first number before
+     * subtracting
      *
+     * @return  int[] with result of subtract cipher and keystream
      *
      */
     public int[] substractKeystreamWithCiphertext(int[] cipherTextConverted, int[] keyStreamConverted){
